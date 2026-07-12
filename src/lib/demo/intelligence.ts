@@ -4,7 +4,7 @@ import { Transaction } from "@/domain";
  * Mocked outputs for the ML layers the proposal specifies (Layer 2:
  * segmentation, forecasting, next-best-action ranking, anomaly detection) —
  * deliberately hard-coded rather than modelled, per the demo's scope. Each
- * export here stands in for a trained model's output on Arjun's data, shaped
+ * export here stands in for a trained model's output on Sophia's data, shaped
  * exactly like what that model would emit, so the UI layer doesn't know or
  * care that nothing underneath is actually trained.
  *

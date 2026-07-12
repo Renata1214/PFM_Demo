@@ -40,8 +40,8 @@ export default function LoginPage() {
             Demo mode
           </p>
           <p className="mt-1.5 text-sm leading-relaxed text-text-muted">
-            You&apos;ll enter as <span className="font-medium text-text">Arjun Menon</span> — a
-            UAE expat sending money home to Kerala every month, six years into an uncertain stay.
+            You&apos;ll enter as <span className="font-medium text-text">Sophia</span> — a UAE
+            expat sending money home to Kerala every month, six years into an uncertain stay.
           </p>
           <div className="mt-3.5 flex flex-col gap-2 border-t border-border-subtle pt-3.5">
             {DEMO_FACTS.map(({ icon: Icon, label }) => (
@@ -55,7 +55,7 @@ export default function LoginPage() {
           </div>
         </div>
         <Button fullWidth onClick={enterDemo} disabled={loading}>
-          {loading ? "Entering..." : "Enter demo as Arjun Menon"}
+          {loading ? "Entering..." : "Enter demo as Sophia"}
           {!loading && <ArrowRight size={16} />}
         </Button>
       </div>

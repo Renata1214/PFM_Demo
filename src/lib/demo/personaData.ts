@@ -3,9 +3,9 @@ import { Account, Commitment, Goal, Transaction, WaterfallRun } from "@/domain";
 /**
  * Deterministic seed generator for the demo persona: the "Remittance
  * Anchor" archetype from the segmentation model (large fixed obligation
- * home, thin local discretionary margin). Arjun is a UAE expat sending
- * money to family in Kerala every month, six years into his stay, with no
- * idea if he'll be here for one more year or twenty.
+ * home, thin local discretionary margin). Sophia is a UAE expat sending
+ * money to family in Kerala every month, six years into her stay, with no
+ * idea if she'll be here for one more year or twenty.
  *
  * Deliberately deterministic (no Math.random) so re-running the seed script
  * always produces the same demo state — important when you're about to walk
@@ -13,8 +13,8 @@ import { Account, Commitment, Goal, Transaction, WaterfallRun } from "@/domain";
  */
 
 export const DEMO_USER = {
-  name: "Arjun Menon",
-  email: "arjun.demo@wio-autopilot.example",
+  name: "Sophia",
+  email: "sophia.demo@wio-autopilot.example",
   persona: "remittance_anchor" as const,
 };
 

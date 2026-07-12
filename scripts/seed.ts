@@ -1,5 +1,5 @@
 /**
- * Seeds Supabase with the demo persona: Arjun Menon, the Remittance Anchor.
+ * Seeds Supabase with the demo persona: Sophia, the Remittance Anchor.
  * Idempotent — safe to re-run; it deletes and re-inserts the demo user's rows.
  *
  * Usage: npm run seed
