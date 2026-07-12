@@ -27,41 +27,14 @@ export interface InsightContext {
 export class InsightAgent {
   private static readonly RUNWAY_WARNING_MONTHS = 4;
   private static readonly IDLE_CASH_THRESHOLD = 15000;
-  /** Below this, the friction of a cancel flow isn't worth it — flagging
-   * every $5 subscription would make the insight noise, not signal. */
-  private static readonly UNUSED_SUBSCRIPTION_MIN_AMOUNT = 100;
 
   generate(ctx: InsightContext): Insight[] {
     const insights: Insight[] = [
-      ...this.detectUnusedSubscriptions(ctx),
       ...this.detectRunwayDrop(ctx),
       ...this.detectRemittanceCreep(ctx),
       ...this.detectIdleCash(ctx),
     ];
     return insights;
-  }
-
-  private detectUnusedSubscriptions(ctx: InsightContext): Insight[] {
-    return ctx.commitments
-      .filter(
-        (c) =>
-          c.type === "subscription" &&
-          c.status === "confirmed" &&
-          c.amount >= InsightAgent.UNUSED_SUBSCRIPTION_MIN_AMOUNT
-      )
-      .map((c) => ({
-        id: `insight_sub_${c.id}`,
-        userId: ctx.userId,
-        type: "unused_subscription" as const,
-        message: `${c.name} (AED ${c.amount.toFixed(0)}/mo) hasn't matched any usage pattern recently.`,
-        action: {
-          label: "Cancel subscription",
-          kind: "cancel_subscription" as const,
-          payload: { commitmentId: c.id },
-        },
-        createdAt: new Date().toISOString(),
-        dismissed: false,
-      }));
   }
 
   private detectRunwayDrop(ctx: InsightContext): Insight[] {

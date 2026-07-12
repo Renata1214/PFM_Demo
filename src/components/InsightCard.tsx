@@ -4,10 +4,9 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Insight } from "@/domain";
 import { Button } from "@/components/ui/Button";
-import { AlertTriangle, TrendingDown, WalletCards, XCircle } from "lucide-react";
+import { AlertTriangle, TrendingDown, WalletCards } from "lucide-react";
 
 const ICONS: Record<Insight["type"], typeof AlertTriangle> = {
-  unused_subscription: XCircle,
   runway_drop: AlertTriangle,
   remittance_cost_creep: TrendingDown,
   idle_cash: WalletCards,

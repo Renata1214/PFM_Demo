@@ -108,7 +108,6 @@ export interface WaterfallRun {
 }
 
 export type InsightType =
-  | "unused_subscription"
   | "runway_drop"
   | "remittance_cost_creep"
   | "idle_cash"
