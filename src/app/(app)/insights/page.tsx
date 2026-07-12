@@ -87,8 +87,8 @@ export default async function InsightsPage() {
   return (
     <main className="flex flex-col gap-4 p-4">
       <div>
-        <h1 className="text-lg font-semibold text-text">Insights Hub</h1>
-        <p className="mt-1 text-xs text-text-muted">
+        <h1 className="text-lg font-semibold text-white">Insights Hub</h1>
+        <p className="mt-1 text-xs text-white/70">
           Live, forward-looking views — every one carries a button, never just a chart.
         </p>
       </div>

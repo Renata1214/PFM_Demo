@@ -51,7 +51,7 @@ export function PlanChat({ initialMessages }: { initialMessages: ChatMessage[] }
       <div className="flex-1 space-y-3 overflow-y-auto p-4">
         {messages.length === 0 && (
           <div className="flex flex-col gap-2">
-            <p className="mb-1 text-xs text-text-faint">Try asking:</p>
+            <p className="mb-1 text-xs text-white/70">Try asking:</p>
             {SUGGESTIONS.map((s) => (
               <button
                 key={s}
@@ -94,7 +94,7 @@ export function PlanChat({ initialMessages }: { initialMessages: ChatMessage[] }
         <div ref={bottomRef} />
       </div>
 
-      <form onSubmit={onSubmit} className="flex gap-2 border-t border-border-subtle p-3">
+      <form onSubmit={onSubmit} className="flex gap-2 border-t border-white/15 p-3">
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}

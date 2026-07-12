@@ -20,8 +20,8 @@ export default async function CommitmentsPage() {
   return (
     <main className="flex flex-col gap-5 p-4">
       <div>
-        <h1 className="text-lg font-semibold text-text">Recurring Payments</h1>
-        <p className="mt-1 text-xs text-text-muted">
+        <h1 className="text-lg font-semibold text-white">Recurring Payments</h1>
+        <p className="mt-1 text-xs text-white/70">
           Detected from your transaction history — same merchant, similar amount,
           same time of month. Nothing here was typed in.
         </p>
@@ -31,7 +31,7 @@ export default async function CommitmentsPage() {
 
       {pending.length > 0 && (
         <section className="flex flex-col gap-3">
-          <p className="px-1 text-xs font-medium uppercase tracking-wide text-text-faint">
+          <p className="px-1 text-xs font-medium uppercase tracking-wide text-white/70">
             Needs your confirmation
           </p>
           {pending.map((c) => (
@@ -57,7 +57,7 @@ export default async function CommitmentsPage() {
           <CommitmentBreakdown commitments={commitments} />
 
           <section className="flex flex-col gap-2">
-            <p className="px-1 text-xs font-medium uppercase tracking-wide text-text-faint">
+            <p className="px-1 text-xs font-medium uppercase tracking-wide text-white/70">
               By day of the month
             </p>
             {confirmed.map((c) => {

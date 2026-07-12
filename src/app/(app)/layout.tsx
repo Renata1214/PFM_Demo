@@ -10,12 +10,12 @@ export default async function AppLayout({ children }: { children: React.ReactNod
 
   return (
     <div className="flex min-h-screen flex-1 flex-col">
-      <header className="flex items-center justify-between border-b border-border-subtle px-5 py-3">
+      <header className="flex items-center justify-between border-b border-white/15 px-5 py-3">
         <div className="flex items-center gap-2">
-          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary/15 text-xs font-bold text-primary">
+          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-white text-xs font-bold text-primary">
             W
           </div>
-          <span className="text-sm font-medium text-text">{DEMO_USER.name}</span>
+          <span className="text-sm font-medium text-white">{DEMO_USER.name}</span>
         </div>
         <LogoutButton />
       </header>

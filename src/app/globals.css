@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #e6daf5;
-  --foreground: #232538;
+  --background: #4a0999;
+  --foreground: #ffffff;
 }
 
 @theme inline {
@@ -11,16 +11,18 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  /* Purple-tinted light palette, tuned toward Wio's own brand tones:
-     a soft lavender wash behind crisp white content cards, with a
-     richer brand purple carrying primary actions and selection. */
-  --color-surface: #f3eefb;
+  /* Electric-violet brand palette: a vivid violet canvas carries the
+     app chrome and open background, crisp white cards carry dense
+     financial content, and a deeper violet (clearly darker than the
+     canvas, so it never disappears into it) carries primary actions
+     and emphasis. */
+  --color-surface: #8f00ff;
   --color-surface-2: #ffffff;
-  --color-surface-3: #ece3f8;
-  --color-border-subtle: #dcceef;
-  --color-primary: #5a3fa6;
-  --color-primary-dim: #452f82;
-  --color-lavender: #e7d9f9;
+  --color-surface-3: #f2e6ff;
+  --color-border-subtle: #e6d6fa;
+  --color-primary: #4a0c9e;
+  --color-primary-dim: #350873;
+  --color-lavender: #eedbff;
   --color-accent: #2f7d52;
   --color-accent-dim: #245f3f;
   --color-warning: #9c5a2a;
