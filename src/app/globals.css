@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #efeae1;
+  --background: #e6daf5;
   --foreground: #232538;
 }
 
@@ -11,16 +11,16 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  /* Warm-neutral light palette: restrained purple, muted status colors,
-     dark navy/charcoal ink. Deliberately low-saturation — see AGENTS.md
-     design brief for the rationale (avoid the generic AI-product look). */
-  --color-surface: #f7f4ee;
+  /* Purple-tinted light palette, tuned toward Wio's own brand tones:
+     a soft lavender wash behind crisp white content cards, with a
+     richer brand purple carrying primary actions and selection. */
+  --color-surface: #f3eefb;
   --color-surface-2: #ffffff;
-  --color-surface-3: #f0ece4;
-  --color-border-subtle: #e6e1d7;
-  --color-primary: #5b4a8c;
-  --color-primary-dim: #463a6e;
-  --color-lavender: #ede8f7;
+  --color-surface-3: #ece3f8;
+  --color-border-subtle: #dcceef;
+  --color-primary: #5a3fa6;
+  --color-primary-dim: #452f82;
+  --color-lavender: #e7d9f9;
   --color-accent: #2f7d52;
   --color-accent-dim: #245f3f;
   --color-warning: #9c5a2a;

@@ -42,7 +42,8 @@ export default async function DashboardPage() {
           className="flex items-center justify-between rounded-2xl border border-primary/30 bg-primary/10 px-4 py-3 text-sm text-text"
         >
           <span>
-            {pendingCount} new commitment{pendingCount > 1 ? "s" : ""} detected — needs your confirmation
+            {pendingCount} new recurring payment{pendingCount > 1 ? "s" : ""} detected — needs your
+            confirmation
           </span>
           <ChevronRight size={16} className="text-primary" />
         </Link>

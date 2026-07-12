@@ -47,9 +47,7 @@ export function MoneyProfileCard() {
       </div>
 
       <div className="mt-4">
-        <p className="mb-2 text-[11px] text-text-faint">
-          Segment membership (soft — never a single label)
-        </p>
+        <p className="mb-2 text-[11px] text-text-faint">Your segment</p>
         <div className="flex h-2 w-full overflow-hidden rounded-full bg-surface-3">
           {SEGMENT_MEMBERSHIP.map((s, i) => (
             <div
@@ -72,8 +70,7 @@ export function MoneyProfileCard() {
       </div>
 
       <p className="mt-3 text-[11px] leading-relaxed text-text-faint">
-        This is how Autopilot understands your situation — tap a trait to correct it. Nothing
-        here ever touches your rate, credit, or eligibility.
+        Tap a trait to correct it — never affects your rate or eligibility.
       </p>
     </div>
   );

@@ -36,17 +36,12 @@ export interface MoneyProfileTrait {
 }
 
 export const MONEY_PROFILE = {
-  headline: "Steady income, high fixed commitments, strong saver, remittance-anchored",
+  headline: "Steady income, strong saver",
   traits: [
     {
       id: "steady_income",
       label: "Steady income",
       evidence: "Same salary, same day, 6 months running",
-    },
-    {
-      id: "high_commitments",
-      label: "High fixed commitments",
-      evidence: "Rent + remittance are 51% of income before anything else moves",
     },
     {
       id: "strong_saver",
@@ -57,11 +52,6 @@ export const MONEY_PROFILE = {
       id: "remittance_anchored",
       label: "Remittance-anchored",
       evidence: "Largest recurring outflow after rent, sent home every month",
-    },
-    {
-      id: "low_frequency_spender",
-      label: "Low-frequency discretionary spender",
-      evidence: "Groceries and dining cluster in a handful of merchants, rarely impulsive",
     },
   ] satisfies MoneyProfileTrait[],
   cohortSize: 1240,

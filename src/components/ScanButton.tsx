@@ -17,7 +17,7 @@ export function ScanButton() {
       const res = await fetch("/api/commitments/scan", { method: "POST" });
       const data = await res.json();
       setResult(
-        `Scanned ${data.scanned} transactions, ${data.inserted} new commitment${data.inserted === 1 ? "" : "s"} found`
+        `Scanned ${data.scanned} transactions, ${data.inserted} new recurring payment${data.inserted === 1 ? "" : "s"} found`
       );
       router.refresh();
     } finally {

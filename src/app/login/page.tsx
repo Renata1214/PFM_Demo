@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 
 const DEMO_FACTS = [
   { icon: History, label: "6 months of transaction history" },
-  { icon: ScanSearch, label: "Commitments detected, not typed in" },
+  { icon: ScanSearch, label: "Recurring payments detected, not typed in" },
   { icon: Sparkles, label: "A live salary-day simulation" },
 ];
 

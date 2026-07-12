@@ -7,7 +7,7 @@ import clsx from "clsx";
 
 const TABS = [
   { href: "/dashboard", label: "Runway", icon: Home },
-  { href: "/commitments", label: "Commitments", icon: ListChecks },
+  { href: "/commitments", label: "Recurring", icon: ListChecks },
   { href: "/waterfall", label: "Salary Day", icon: Droplets },
   { href: "/insights", label: "Insights", icon: Sparkles },
   { href: "/plan", label: "Plan", icon: MessageCircle },
