@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { getDemoUserId } from "@/lib/demo/session";
 import { FinanceRepository } from "@/lib/repository/FinanceRepository";
 import { RunwayCalculator, InsightAgent } from "@/domain";
+import { computeThresholdSnapshot } from "@/lib/demo/intelligence";
 import { RunwayHero } from "@/components/RunwayHero";
 import { CommitmentBreakdown } from "@/components/CommitmentBreakdown";
 import { InsightCard } from "@/components/InsightCard";
@@ -16,6 +17,7 @@ export default async function DashboardPage() {
   const { accounts, transactions, commitments, plan } = await repo.getUserBundle(userId);
 
   const runway = new RunwayCalculator().computeRunway(accounts, commitments, plan.safeToSpendFloor);
+  const threshold = computeThresholdSnapshot();
 
   const freshInsights = new InsightAgent().generate({
     userId,
@@ -32,7 +34,7 @@ export default async function DashboardPage() {
 
   return (
     <main className="flex flex-col gap-4 p-4">
-      <RunwayHero runway={runway} />
+      <RunwayHero runway={runway} threshold={threshold} />
 
       {pendingCount > 0 && (
         <Link

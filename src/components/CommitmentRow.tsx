@@ -37,7 +37,7 @@ export function CommitmentRow({ commitment }: { commitment: Commitment }) {
   if (hidden) return null;
 
   return (
-    <div className="flex flex-col gap-3 rounded-2xl border border-primary/25 bg-primary/[0.06] p-4">
+    <div className="flex flex-col gap-3 rounded-2xl border border-primary/20 bg-lavender p-4">
       <div className="flex items-start justify-between">
         <div>
           <p className="text-sm font-medium text-text">{commitment.name}</p>

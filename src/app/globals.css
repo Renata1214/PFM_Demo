@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0c12;
-  --foreground: #f4f5f9;
+  --background: #efeae1;
+  --foreground: #232538;
 }
 
 @theme inline {
@@ -11,28 +11,33 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  /* Wio-inspired dark palette */
-  --color-surface: #12151d;
-  --color-surface-2: #1a1e29;
-  --color-surface-3: #232838;
-  --color-border-subtle: #262b3a;
-  --color-primary: #7c5cfc;
-  --color-primary-dim: #5a41c9;
-  --color-accent: #1fe3ac;
-  --color-accent-dim: #14a67d;
-  --color-warning: #f5a623;
-  --color-danger: #ff5c6c;
-  --color-text: #f4f5f9;
-  --color-text-muted: #9096a8;
-  --color-text-faint: #5c6274;
+  /* Warm-neutral light palette: restrained purple, muted status colors,
+     dark navy/charcoal ink. Deliberately low-saturation — see AGENTS.md
+     design brief for the rationale (avoid the generic AI-product look). */
+  --color-surface: #f7f4ee;
+  --color-surface-2: #ffffff;
+  --color-surface-3: #f0ece4;
+  --color-border-subtle: #e6e1d7;
+  --color-primary: #5b4a8c;
+  --color-primary-dim: #463a6e;
+  --color-lavender: #ede8f7;
+  --color-accent: #2f7d52;
+  --color-accent-dim: #245f3f;
+  --color-warning: #9c5a2a;
+  --color-danger: #b03a34;
+  --color-text: #232538;
+  --color-text-muted: #666977;
+  --color-text-faint: #93969f;
 
-  /* Categorical chart palette (validated: scripts/validate_palette.js, dark mode,
-     surface #12151d — all six checks pass). Fixed order, never cycled. */
-  --color-cat-1: #4a90e2;
-  --color-cat-2: #7c5cfc;
-  --color-cat-3: #14a67d;
-  --color-cat-4: #c9821b;
-  --color-cat-5: #c25c82;
+  /* Categorical chart palette (validated: dataviz skill's
+     scripts/validate_palette.js, light mode, surface #ffffff — lightness
+     band, chroma floor, CVD adjacent-pair separation and contrast all
+     pass). Fixed order, never cycled. */
+  --color-cat-1: #6b4fa0;
+  --color-cat-2: #0a8f82;
+  --color-cat-3: #b8863b;
+  --color-cat-4: #3e6fa8;
+  --color-cat-5: #b1495a;
 }
 
 body {
@@ -50,6 +55,6 @@ body {
   height: 6px;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-surface-3);
+  background: var(--color-border-subtle);
   border-radius: 999px;
 }

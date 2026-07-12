@@ -26,11 +26,11 @@ export function BottomNav() {
               <Link
                 href={href}
                 className={clsx(
-                  "flex flex-col items-center gap-1 rounded-xl px-2 py-2 text-[11px] transition-colors",
-                  active ? "text-primary" : "text-text-faint hover:text-text-muted"
+                  "flex flex-col items-center gap-1 rounded-xl px-2 py-1.5 text-[11px] transition-colors",
+                  active ? "bg-lavender text-primary" : "text-text-faint hover:text-text-muted"
                 )}
               >
-                <Icon size={20} strokeWidth={active ? 2.4 : 1.8} />
+                <Icon size={19} strokeWidth={active ? 2.2 : 1.8} />
                 {label}
               </Link>
             </li>

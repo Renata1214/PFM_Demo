@@ -35,8 +35,8 @@ export function InsightsHubTabs({
             key={key}
             onClick={() => setActive(key)}
             className={clsx(
-              "flex flex-1 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl px-2 py-2 text-xs transition-colors",
-              active === key ? "bg-primary text-white" : "text-text-faint hover:text-text-muted"
+              "flex flex-1 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl px-2 py-2 text-xs font-medium transition-colors",
+              active === key ? "bg-lavender text-primary" : "text-text-faint hover:text-text-muted"
             )}
           >
             <Icon size={13} />

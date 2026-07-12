@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0a0c12",
+  themeColor: "#f7f4ee",
 };
 
 export default function RootLayout({
@@ -34,7 +34,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-background text-foreground">
-        <div className="mx-auto flex min-h-screen w-full max-w-md flex-col bg-surface md:my-6 md:min-h-[calc(100vh-3rem)] md:rounded-[2rem] md:border md:border-border-subtle md:shadow-2xl">
+        <div className="mx-auto flex min-h-screen w-full max-w-md flex-col bg-surface md:my-8 md:min-h-[calc(100vh-4rem)] md:rounded-[1.75rem] md:border md:border-border-subtle md:shadow-[0_8px_30px_-12px_rgba(35,37,56,0.18)]">
           {children}
         </div>
       </body>
