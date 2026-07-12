@@ -3,6 +3,7 @@
 import { useRef, useState, FormEvent } from "react";
 import { Send } from "lucide-react";
 import clsx from "clsx";
+import { MarkdownMessage } from "@/components/MarkdownMessage";
 
 interface ChatMessage {
   role: "user" | "assistant";
@@ -69,13 +70,17 @@ export function PlanChat({ initialMessages }: { initialMessages: ChatMessage[] }
           >
             <div
               className={clsx(
-                "max-w-[85%] whitespace-pre-wrap rounded-2xl px-4 py-2.5 text-sm leading-relaxed",
+                "max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed",
                 m.role === "user"
-                  ? "bg-primary text-white"
-                  : "bg-surface-2 text-text border border-border-subtle"
+                  ? "whitespace-pre-wrap bg-primary text-white"
+                  : "bg-surface-2 border border-border-subtle"
               )}
             >
-              {m.content}
+              {m.role === "assistant" ? (
+                <MarkdownMessage content={m.content} />
+              ) : (
+                m.content
+              )}
             </div>
           </div>
         ))}
