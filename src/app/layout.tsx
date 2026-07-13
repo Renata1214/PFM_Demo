@@ -13,14 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Wio Autopilot — Demo",
+  title: "Wio Flow — Demo",
   description: "A personal finance system that acts, not just reports.",
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#8f00ff",
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({

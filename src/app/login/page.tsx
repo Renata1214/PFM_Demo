@@ -24,11 +24,11 @@ export default function LoginPage() {
   return (
     <main className="flex flex-1 flex-col justify-between p-6">
       <div className="mt-14 flex flex-col items-center text-center">
-        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-white shadow-sm shadow-black/10">
-          <span className="text-xl font-semibold text-primary">W</span>
+        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary shadow-sm shadow-primary/25">
+          <span className="text-xl font-semibold text-white">W</span>
         </div>
-        <h1 className="text-[1.75rem] font-semibold tracking-tight text-white">Wio Autopilot</h1>
-        <p className="mt-3 max-w-[19rem] text-sm leading-relaxed text-white/75">
+        <h1 className="text-[1.75rem] font-semibold tracking-tight text-text">Wio Flow</h1>
+        <p className="mt-3 max-w-[19rem] text-sm leading-relaxed text-text-muted">
           A personal finance system that runs your plan by default, and only
           interrupts you when there&apos;s a real decision to make.
         </p>
@@ -54,12 +54,7 @@ export default function LoginPage() {
             ))}
           </div>
         </div>
-        <Button
-          fullWidth
-          onClick={enterDemo}
-          disabled={loading}
-          className="ring-1 ring-white/25"
-        >
+        <Button fullWidth onClick={enterDemo} disabled={loading}>
           {loading ? "Entering..." : "Enter demo as Sophia"}
           {!loading && <ArrowRight size={16} />}
         </Button>

@@ -46,7 +46,7 @@ export function ThresholdTrackerCard({ snapshot }: { snapshot: ThresholdSnapshot
       </div>
 
       {snapshot.overshoot ? (
-        <div className="flex items-start gap-3 rounded-2xl border border-accent/25 bg-surface-2 p-4">
+        <div className="flex items-start gap-3 rounded-2xl border border-accent/25 bg-accent/[0.07] p-4">
           <CheckCircle2 size={18} className="mt-0.5 flex-none text-accent" />
           <p className="text-sm text-text">{snapshot.routingMessage}</p>
         </div>
@@ -57,7 +57,7 @@ export function ThresholdTrackerCard({ snapshot }: { snapshot: ThresholdSnapshot
         </div>
       )}
 
-      <p className="px-1 text-[11px] leading-relaxed text-white/70">
+      <p className="px-1 text-[11px] leading-relaxed text-text-faint">
         This tracker only routes spending you already had planned — it never suggests spending
         more than you would anyway. Once the condition is met for the cycle, it stops and stays
         quiet: no streaks, no &ldquo;keep going.&rdquo;

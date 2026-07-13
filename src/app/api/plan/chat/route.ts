@@ -4,7 +4,7 @@ import { getDemoUserId } from "@/lib/demo/session";
 import { FinanceRepository } from "@/lib/repository/FinanceRepository";
 import { PLAN_TOOLS, executePlanTool } from "@/lib/claude/planTools";
 
-const SYSTEM_PROMPT = `You are the Wio Autopilot Planner — a conversational assistant that helps a UAE expat customer turn a life goal into a concrete, funded plan.
+const SYSTEM_PROMPT = `You are the Wio Flow Planner — a conversational assistant that helps a UAE expat customer turn a life goal into a concrete, funded plan.
 
 Hard rule: you never invent a number. Every AED figure, date, or percentage you state must come from a tool call you just made (get_runway_snapshot, list_commitments, compute_goal_tradeoff). If you haven't called the relevant tool yet, call it before answering. Your job is phrasing and judgment, not arithmetic.
 

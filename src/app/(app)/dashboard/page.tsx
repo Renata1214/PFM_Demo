@@ -39,7 +39,7 @@ export default async function DashboardPage() {
       {pendingCount > 0 && (
         <Link
           href="/commitments"
-          className="flex items-center justify-between rounded-2xl border border-border-subtle bg-surface-2 px-4 py-3 text-sm text-text shadow-sm shadow-black/10"
+          className="flex items-center justify-between rounded-2xl border border-primary/30 bg-primary/10 px-4 py-3 text-sm text-text"
         >
           <span>
             {pendingCount} new recurring payment{pendingCount > 1 ? "s" : ""} detected — needs your
@@ -51,7 +51,7 @@ export default async function DashboardPage() {
 
       {visibleInsights.length > 0 && (
         <section className="flex flex-col gap-3">
-          <p className="px-1 text-xs font-medium uppercase tracking-wide text-white/70">
+          <p className="px-1 text-xs font-medium uppercase tracking-wide text-text-faint">
             Insights
           </p>
           {visibleInsights.map((insight) => (

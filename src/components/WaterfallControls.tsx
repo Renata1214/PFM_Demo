@@ -71,14 +71,10 @@ export function WaterfallControls() {
         {loading ? "Running waterfall..." : "Simulate salary landing today"}
       </Button>
 
-      {error && (
-        <p className="rounded-xl border border-border-subtle bg-surface-2 px-3 py-2 text-xs text-danger">
-          {error}
-        </p>
-      )}
+      {error && <p className="text-xs text-danger">{error}</p>}
 
       {run && run.status === "executed" && (
-        <div className="rounded-2xl border border-accent/25 bg-surface-2 p-4">
+        <div className="rounded-2xl border border-accent/25 bg-accent/[0.07] p-4">
           <p className="mb-2 text-sm font-medium text-text">
             Waterfall ran {new Date(run.executedAt).toLocaleString()}
           </p>

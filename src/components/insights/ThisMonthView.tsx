@@ -103,7 +103,7 @@ export function ThisMonthView({
       </div>
 
       {hot.deviationPct > 15 && (
-        <div className="flex flex-col gap-2 rounded-2xl border border-warning/25 bg-surface-2 p-4">
+        <div className="flex flex-col gap-2 rounded-2xl border border-warning/25 bg-warning/[0.07] p-4">
           <p className="text-sm text-text">
             {hot.label} is {hot.deviationPct}% above your usual pace — AED{" "}
             {Math.round(hot.thisMonthSoFar - (hot.sixMonthNorm * snapshot.dayOfMonth) / snapshot.daysInMonth)} over.

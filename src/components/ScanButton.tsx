@@ -31,7 +31,7 @@ export function ScanButton() {
         <ScanSearch size={15} />
         {scanning ? "Scanning transaction history..." : "Re-scan transactions"}
       </Button>
-      {result && <p className="px-1 text-xs text-white/70">{result}</p>}
+      {result && <p className="px-1 text-xs text-text-faint">{result}</p>}
     </div>
   );
 }

@@ -56,7 +56,7 @@ export function GoalProgressView({
       </div>
 
       {!projection.onSchedule && (
-        <div className="rounded-2xl border border-warning/25 bg-surface-2 p-4">
+        <div className="rounded-2xl border border-warning/25 bg-warning/[0.07] p-4">
           <p className="mb-3 text-sm text-text">
             At the current pace, this lands around{" "}
             <span className="font-medium">{formatDateLabel(projection.projectedCompletionDate)}</span> —{" "}
